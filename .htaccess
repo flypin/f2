@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^s([0-9]+)$ index99.php?sid=$1 [L]
+RewriteRule ^m([0-9]+)$ index99.php?mid=$1 [L]
+RewriteRule ^u-([a-zA-Z0-9_]+)-([0-9]+)$ index.php99?uid=$1&page=$2 [L]
+
+RewriteRule ^status([0-9]+)$ index99.php?status_id=$1 [L]
+
+</IfModule>
+
